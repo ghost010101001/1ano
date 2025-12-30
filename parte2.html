@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ja se passou um ano</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(120deg,#ffe4e1,#ffc0cb,#ffd1dc);
+  background-size:300% 300%;
+  animation:bg 10s infinite;
+  color:#800000;
+  overflow-x:hidden;
+}
+
+@keyframes bg{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+section{
+  padding:50px 20px;
+  text-align:center;
+}
+
+h2{
+  font-family:'Dancing Script',cursive;
+  font-size:2.4em;
+  margin-bottom:20px;
+  color:#b22222;
+}
+
+.typing{
+  font-family:'Dancing Script',cursive;
+  font-size:2em;
+  min-height:60px;
+}
+
+.slideshow{
+  width:300px;
+  height:300px;
+  margin:30px auto;
+  border-radius:20px;
+  overflow:hidden;
+  position:relative;
+  box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.slide{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:0;
+  transition:opacity 1.5s ease-in-out;
+}
+
+.slide.active{
+  opacity:1;
+  z-index:1;
+}
+
+.button{
+  padding:15px 35px;
+  margin:10px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(45deg,#ff69b4,#ff1493);
+  color:white;
+  font-size:1.1em;
+  cursor:pointer;
+  box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+.button:hover{transform:scale(1.05)}
+
+.box{
+  display:none;
+  background:#fff0f6;
+  padding:25px;
+  border-radius:15px;
+  max-width:90%;
+  margin:20px auto;
+  animation:fade .6s ease;
+  text-align:justify;
+}
+
+@keyframes fade{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+.video-container video{
+  width:90%;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.hearts{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+}
+
+.heart{
+  position:absolute;
+  top:-20px;
+  width:18px;
+  height:18px;
+  background:#ff3366;
+  transform:rotate(45deg);
+  animation:fall linear;
+}
+
+.heart::before,.heart::after{
+  content:'';
+  position:absolute;
+  width:18px;
+  height:18px;
+  background:#ff3366;
+  border-radius:50%;
+}
+
+.heart::before{top:-9px}
+.heart::after{left:-9px}
+
+@keyframes fall{
+  to{transform:translateY(120vh) rotate(360deg);opacity:0}
+}
+</style>
+</head>
+
+<body>
+
+<audio id="music" loop>
+  <source src="WhatsApp Audio 2025-12-29 at 19.40.30 (online-audio-converter.com).mp3" type="audio/mpeg">
+</audio>
+
+<section>
+  <button class="button" onclick="toggleMusic()">🎵 Música</button>
+  <div class="typing" id="typing"></div>
+</section>
+
+<section>
+  <div class="slideshow" id="slideshow">
+    <img src="a4895a5b-af0a-479c-87b4-7e5382ca1a34.jpg" class="slide">
+    <img src="c3f0d20a-c2e2-4a9c-921c-aa0b2b45cc8b.jpg" class="slide">
+    <img src="casal-abraçado-para-ilustrar-frases-de-amor-à-distância-300x300.webp" class="slide">
+    <img src="ebb7fd077d3fae8cc9cdf308e7211148.webp" class="slide">
+    <img src="quando-o-amor-e-verdadeiro.webp" class="slide">
+  </div>
+</section>
+
+<section>
+  <h2>📜Cartinha pra princesa</h2>
+  <button class="button" onclick="toggle('carta')">Ler</button>
+  <div id="carta" class="box">
+ No começo, eu realmente achava que o nosso namoro não ia durar muito. Mas o tempo foi passando, os meses foram se acumulando, e sem que eu percebesse, fui me apegando a você fortemente, a ponto de não conseguir viver sem você. Aos poucos, meu coração foi entendendo aquilo que minha mente ainda não sabia explicar: eu tinha encontrado o amor da minha vida. Encontrei alguém com quem quero viver todos os dias, alguém que eu quero ao meu lado para caminhar juntos por toda a vida, me amando eternamente.
+
+Nós passamos por muitas coisas juntos. Tivemos brigas, discussões e momentos difíceis, mas também tivemos carinho, conversas sinceras e momentos que guardo com muito amor no coração. E, apesar de tudo o que enfrentamos, o que mais importa é que o nosso amor nunca diminuiu. Pelo contrário, ele só cresce a cada dia. Estamos amadurecendo juntos, aprendendo um com o outro, errando e acertando, mas sempre tentando evoluir e cuidar melhor um do outro, dia após dia.
+
+Neste nosso primeiro ano, enfrentamos muitas dificuldades, desafios e inseguranças. Nem sempre foi fácil, mas mesmo assim continuamos aqui, juntos. Eu espero que, nos próximos anos, nós dois consigamos lidar melhor um com o outro, com mais paciência, compreensão e diálogo, para que o nosso amor continue forte e seja capaz de durar para sempre.
+
+Quero te pedir desculpa por todas as vezes em que errei, impliquei com coisas bobas, deixei o ciúme falar mais alto ou falei coisas que não deveria. Eu ainda estou aprendendo a lidar com esse relacionamento, aprendendo a amar da forma certa. Tenho muito medo de te perder da minha vida, porque você se tornou alguém com quem não consigo viver sem, e é por esse medo que, às vezes, o ciúme aparece. Mas eu prometo, de verdade, tentar melhorar a cada dia, ser uma pessoa melhor por você e por nós. Prometo cuidar do nosso amor com mais maturidade, mais calma e mais carinho. Também prometo que vou fazer de tudo para te fazer feliz ao meu lado e que você nunca vai se arrepender de ter me escolhido.
+
+Eu queria muito ter ido te ver para comemorarmos juntos esse nosso aniversário de namoro, te abraçar bem forte, te beijar, olhar nos seus olhos e te dar um presente. Queria estar nesse momento ao seu lado, do jeito que sempre sonhamos. Mas, como a sua mãe não deixou, fiz tudo o que estava ao meu alcance. Mesmo de longe, meu coração está com você o tempo todo. Me desculpa por não estar ao seu lado em um momento tão especial para nós dois, mas saiba que o meu amor por você nunca esteve distante.
+  </div>
+</section>
+
+
+<section>
+  <h2>📝 Perguntinhas pra princesa</h2>
+  <div class="box" id="quizBox" style="display:block">
+    <p id="quizPergunta"></p>
+    <button class="button" onclick="responder(0)" id="op0"></button>
+    <button class="button" onclick="responder(1)" id="op1"></button>
+    <button class="button" onclick="responder(2)" id="op2"></button>
+  </div>
+
+  <div class="box" id="quizResultado"></div>
+
+  <!-- FINAL SECRETO -->
+  <div class="box" id="finalSecreto">
+    <p>
+      Como vc acertou tudo você te direito a me pedir oque quiser por um dia.<br><br>
+      <br><br>
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>🌹Quais dias você ama mais?</h2>
+  <button class="button" onclick="final()">Sempre</button>
+  <button class="button" onclick="final()">Todos os dias</button>
+  <div class="box" id="finalMsg"></div>
+</section>
+
+<div class="hearts"></div>
+
+<script>
+/* TEXTO DIGITADO */
+const frases=[
+"Finalmente chegamos a um ano ❤️",
+"Você mudou minha vida",
+"Mesmo de longe, eu escolhi você",
+"Eu te amo, minha princesa"
+];
+let ti=0,tj=0;
+const typing=document.getElementById('typing');
+
+function type(){
+ if(tj<frases[ti].length){
+  typing.textContent+=frases[ti][tj++];
+  setTimeout(type,80);
+ }else setTimeout(erase,1500);
+}
+function erase(){
+ if(tj>0){
+  typing.textContent=frases[ti].substring(0,--tj);
+  setTimeout(erase,40);
+ }else{
+  ti=(ti+1)%frases.length;
+  setTimeout(type,300);
+ }
+}
+type();
+
+/* SLIDESHOW CORRIGIDO */
+window.addEventListener('load',()=>{
+ const slides=[...document.querySelectorAll('.slide')];
+ let s=0;
+ slides.forEach(sl=>sl.classList.remove('active'));
+ slides[0].classList.add('active');
+
+ setInterval(()=>{
+  slides[s].classList.remove('active');
+  s=(s+1)%slides.length;
+  slides[s].classList.add('active');
+ },4000);
+});
+
+/* TOGGLES */
+function toggle(id){
+ const el=document.getElementById(id);
+ el.style.display=el.style.display==='block'?'none':'block';
+}
+
+/* MÚSICA */
+const music=document.getElementById('music');
+function toggleMusic(){
+ music.paused?music.play().catch(()=>{}):music.pause();
+}
+
+/* QUIZ + FINAL SECRETO */
+const quiz=[
+{p:"Qual a hora que te pedi em namoro?",o:["22:00","22:36","22:40"],c:1},
+{p:"Que dia te pedi em namoro?",o:["21/01","28/02","23/03"],c:0},
+{p:"Eu te amo quanto?",o:["Nada","muito","mil milhões"],c:2}
+];
+
+let q=0,pontos=0;
+const quizPergunta=document.getElementById('quizPergunta');
+
+function carregar(){
+ const a=quiz[q];
+ quizPergunta.textContent=a.p;
+ op0.textContent=a.o[0];
+ op1.textContent=a.o[1];
+ op2.textContent=a.o[2];
+}
+function responder(i){
+ if(i===quiz[q].c)pontos++;
+ q++;
+ q<quiz.length?carregar():resultado();
+}
+function resultado(){
+ quizBox.style.display='none';
+ quizResultado.style.display='block';
+ quizResultado.innerHTML=`Você acertou ${pontos} de ${quiz.length}.<br><br>Neném esperta ❤️`;
+
+ if(pontos===quiz.length){
+   setTimeout(()=>{
+     document.getElementById('finalSecreto').style.display='block';
+     chuvaExtra();
+   },1500);
+ }
+}
+carregar();
+
+/* FINAL NORMAL */
+function final(){
+ finalMsg.style.display='block';
+ finalMsg.innerHTML='Acertou❤️';
+}
+
+/* CORAÇÕES */
+const hearts=document.querySelector('.hearts');
+function criarCoracao(){
+ const h=document.createElement('div');
+ h.className='heart';
+ h.style.left=Math.random()*100+'vw';
+ h.style.animationDuration=(4+Math.random()*4)+'s';
+ hearts.appendChild(h);
+ setTimeout(()=>h.remove(),9000);
+}
+setInterval(criarCoracao,400);
+
+/* CHUVA EXTRA NO FINAL SECRETO */
+function chuvaExtra(){
+ for(let i=0;i<30;i++){
+   setTimeout(criarCoracao,i*150);
+ }
+}
+</script>
+</body>
+</html>
